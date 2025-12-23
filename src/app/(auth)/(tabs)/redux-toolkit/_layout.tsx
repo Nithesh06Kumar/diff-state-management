@@ -7,7 +7,7 @@ export default function ReduxToolkitLayout() {
       <Stack.Screen
         name="index"
         options={{
-          title: "",
+          title: "Toolkit Store",
           headerRight: () => (
             <Link href={"/(auth)/(tabs)/redux-toolkit/cart"}>
               <Feather name="shopping-cart" size={24} color="black" />

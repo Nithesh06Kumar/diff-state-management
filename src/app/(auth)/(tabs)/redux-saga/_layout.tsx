@@ -12,7 +12,7 @@ export default function ReduxSagaLayout() {
               <Feather name="shopping-cart" size={24} color="black" />
             </Link>
           ),
-          title: "",
+          title: "Saga Store",
         }}
       />
       <Stack.Screen

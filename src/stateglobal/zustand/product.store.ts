@@ -9,6 +9,7 @@ export type CartItem = {
   price: number;
   rating: { rate: number; count: number };
   title: string;
+  quantity?: number;
 };
 
 type TState = {
@@ -29,7 +30,22 @@ export const useCartProduct = create<TState & TActions>((set) => ({
     const data = await fetchProductsApi();
     set({ products: data || [] });
   },
-  addItemToCart: (item) => set((state) => ({ cart: [...state.cart, item] })),
+  addItemToCart: (item) =>
+    set((state) => {
+      const existingItem = state.cart.find((ele) => ele.id === item?.id);
+      if (!existingItem) {
+        return { cart: [...state.cart, { ...item, quantity: 1 }] };
+      }
+
+      return {
+        cart: state.cart.map((ele) =>
+          ele.id === item.id
+            ? { ...ele, quantity: (ele.quantity || 0) + 1 }
+            : ele
+        ),
+      };
+    }),
+
   removeItemFromCart: (id: number) =>
     set((state) => {
       const newCart = state.cart?.filter((item) => item.id !== id);

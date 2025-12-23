@@ -7,7 +7,7 @@ export default function ZustandLayout() {
       <Stack.Screen
         name="index"
         options={{
-          title: "",
+          title: "Zustand Store",
           headerRight: () => (
             <Link href={"/(auth)/(tabs)/zustand/cart"}>
               <Feather name="shopping-cart" size={24} color="black" />
@@ -21,6 +21,7 @@ export default function ZustandLayout() {
           presentation: "formSheet",
           headerShown: false,
           sheetGrabberVisible: true,
+          sheetAllowedDetents: [0.9],
         }}
       />
     </Stack>
