@@ -3,7 +3,7 @@ import { Link, Stack } from "expo-router";
 
 export default function ReduxToolkitLayout() {
   return (
-    <Stack>
+    <Stack screenOptions={{ contentStyle: { backgroundColor: "#fff" } }}>
       <Stack.Screen
         name="index"
         options={{
@@ -21,6 +21,7 @@ export default function ReduxToolkitLayout() {
           presentation: "formSheet",
           headerShown: false,
           sheetGrabberVisible: true,
+          sheetAllowedDetents: [0.9],
         }}
       />
     </Stack>

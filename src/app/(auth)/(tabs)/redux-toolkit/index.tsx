@@ -1,14 +1,11 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import ToolkitScreen from "@/src/components/screens/ToolKit/ToolkitScreen";
+import React from "react";
+import { StyleSheet } from "react-native";
 
 const Index = () => {
-  return (
-    <View>
-      <Text>REDUX Toolkit</Text>
-    </View>
-  )
-}
+  return <ToolkitScreen />;
+};
 
-export default Index
+export default Index;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

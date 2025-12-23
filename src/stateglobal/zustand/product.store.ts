@@ -52,3 +52,10 @@ export const useCartProduct = create<TState & TActions>((set) => ({
       return { cart: newCart };
     }),
 }));
+
+//SAMPLE BOILERPLATE
+// const storege=create((set)=>({
+//   cart:[],
+//   addCart:(params:any)=>set({cart:1}),
+//   addCart2:(params:any)=>set((state)=>({cart:state.cart}))
+// }))
