@@ -7,7 +7,6 @@ export const fetchProductsApi = async () => {
     }
 
     const data = await response.json();
-    console.log("DATA", data);
     return data;
   } catch (e) {
     console.error("ERROR", e);
