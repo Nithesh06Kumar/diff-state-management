@@ -1,6 +1,10 @@
 # Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app). The project preprared for learning the integration of zustand and redux-tool kit flows.
+
+<img width="200" height="400" alt="Simulator Screenshot - iPhone 17 Pro Max - 2025-12-24 at 15 10 12" src="https://github.com/user-attachments/assets/5e400969-d871-4d9f-a94b-b13db6941f4b" />
+<img width="200" height="400" alt="Simulator Screenshot - iPhone 17 Pro Max - 2025-12-24 at 15 09 59" src="https://github.com/user-attachments/assets/c3346d76-a6d0-49b4-8dc6-c016c33a5b4b" />
+<img width="200" height="400" alt="Simulator Screenshot - iPhone 17 Pro Max - 2025-12-24 at 15 13 05" src="https://github.com/user-attachments/assets/ad41534e-5dd7-4238-85e0-b8505c9ba0a4" />
 
 ## Get started
 
