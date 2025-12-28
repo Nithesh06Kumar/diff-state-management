@@ -1,5 +1,6 @@
 import { UITheme } from "@/src/theme";
 import { useTheme } from "@emotion/react";
+import FontAwesome from "@expo/vector-icons/FontAwesome";
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import Fontisto from "@expo/vector-icons/Fontisto";
 import { Tabs } from "expo-router";
@@ -38,13 +39,13 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="redux-saga"
+        name="todo"
         options={{
-          title: "Redux-Saga",
+          title: "Todo List",
           tabBarIcon: ({ color }) => (
-            <Fontisto name="redux" size={24} color={color} />
+            <FontAwesome name="list-alt" size={24} color={color} />
           ),
-          tabBarActiveTintColor: theme.colors.darkGreen,
+          tabBarActiveTintColor: theme.colors.black,
         }}
       />
     </Tabs>
